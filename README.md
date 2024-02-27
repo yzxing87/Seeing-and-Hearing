@@ -25,3 +25,14 @@ Specifically, we propose a multimodality latent aligner with the pre-trained Ima
 **Figure:** *Our results* -->
 
 ### Code will come soon. 
+
+## Citation
+
+```
+@inproceedings{xing24seeing,
+  title     = {Seeing and Hearing: Open-domain Visual-Audio Generation with Diffusion Latent Aligners},
+  author    = {Xing, Yazhou and He, Yingqing and Tian, Zeyue and Wang, Xintao and Chen, Qifeng},
+  booktitle = {CVPR},
+  year      = {2024}
+}
+```
