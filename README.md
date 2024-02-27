@@ -16,12 +16,12 @@ Specifically, we propose a multimodality latent aligner with the pre-trained Ima
 [[Paper](TBD)] 
 [[Project Page](https://yzxing87.github.io/Seeing-and-Hearing/)]
 
-<video controls>
+<!-- <video controls>
   <source src="supp-new-compressed.mp4" type="video/mp4">
   Your browser does not support the video tag.
-</video>
+</video> -->
 
 <!-- ![](./figures/result_01.png)
 **Figure:** *Our results* -->
 
-**Code will come soon**
+### Code will come soon. 
