@@ -39,5 +39,6 @@ Our code will come soon.
 }
 ```
 
-📭 Contact
+## 📭 Contact
+
 If you have any comments or questions, feel free to contact [Yazhou Xing](yxingag@connect.ust.hk), [Yingqing He](yhebm@connect.ust.hk) or [Zeyue Tian](ztianad@connect.ust.hk).
