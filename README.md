@@ -1,6 +1,6 @@
 # Seeing-and-Hearing
 
-**This repository includes official codes for "[Seeing and Hearing: Open-domain Visual-Audio Generation with Diffusion Latent Aligners (CVPR 2024)](TBD)".** 
+**This repository includes official codes for "[Seeing and Hearing: Open-domain Visual-Audio Generation with Diffusion Latent Aligners (CVPR 2024)](https://arxiv.org/abs/2402.17723)".** 
 
 ## 🔮 Method
 ![](./figures/teaser.png)
