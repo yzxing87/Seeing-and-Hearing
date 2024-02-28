@@ -14,7 +14,7 @@ Specifically, we propose a multimodality latent aligner with the pre-trained Ima
 >  Yazhou Xing<sup>* 1</sup>, Yingqing He<sup>* 1</sup>, Zeyue Tian<sup>* 1</sup>, Xintao Wang<sup>2</sup>, Qifeng Chen<sup>1</sup> (* indicates equal contribution)<br>
 >  <sup>1</sup>HKUST, <sup>2</sup>ARC Lab, Tencent PCG <br>
 
-[[Paper](TBD)] 
+[[Paper](https://arxiv.org/abs/2402.17723)] 
 [[Project Page](https://yzxing87.github.io/Seeing-and-Hearing/)]
 
 <!-- <video controls>
