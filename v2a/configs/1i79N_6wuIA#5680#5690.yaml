@@ -1,0 +1,60 @@
+sd_pretrained_model_path: "/home/yazhou/disk1/projects/edit/FateZero/stable-diffusion-v1-4"
+audio_pretrained_model_path: "ckpt/audioldm-m-full"
+output_dir: "./outputs/1i79N_6wuIA#5680#5690"
+
+train_data:
+  video_path: "/home/yazhou/disk1/projects/edit/dataset/landscape/train/underwater_bubbling/1i79N_6wuIA#5680#5690_clip.mp4"
+  audio_path: "/home/yazhou/disk1/projects/edit/dataset/landscape/train/underwater_bubbling/1i79N_6wuIA#5680#5690_clip.wav"
+  prompt: "a bunch of bubbles floating under water"
+  n_sample_frames: 16
+  width: 512
+  height: 512
+  sample_start_idx: 0
+  sample_frame_rate: 1
+
+
+unet_additional_kwargs:
+  use_visual_condition_module: true
+  motion_module_resolutions:
+  - 2
+  - 4
+  - 8
+  visual_condition_module_type: Vanilla
+  motion_module_kwargs:
+    num_attention_heads: 8
+    num_transformer_block: 1
+    attention_block_types:
+    - Temporal_Self
+    - Temporal_Self
+    temporal_position_encoding: true
+    temporal_position_encoding_max_len: 24
+    temporal_attention_dim_div: 1
+
+
+validation_data:
+  prompts:
+    - "a bunch of bubbles floating under water"
+  video_length: 16
+  width: 512
+  height: 512
+  num_inference_steps: 50
+  guidance_scale: 12.5
+  use_inv_latent: True
+  num_inv_steps: 50
+
+learning_rate: 3e-5
+train_batch_size: 1
+max_train_steps: 500
+checkpointing_steps: 500
+validation_steps: 100
+trainable_modules:
+  - "attn1.to_q"
+  - "attn2.to_q"
+  - "attn_temp"
+
+
+seed: 33
+mixed_precision: fp16
+use_8bit_adam: False
+gradient_checkpointing: True
+enable_xformers_memory_efficient_attention: True

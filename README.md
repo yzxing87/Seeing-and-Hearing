@@ -25,8 +25,56 @@ Specifically, we propose a multimodality latent aligner with the pre-trained Ima
 <!-- ![](./figures/result_01.png)
 **Figure:** *Our results* -->
 
+## TODO
+
+- [x] open-source v2a codes 
+- [x] open-source evaluation codes 
+- [ ] open-source joint-va, a2v, and i2v codes 
+
+
 ## ⚙️ Code 
-Our code will come soon. 
+### Installation 
+Please follow the instructions below:
+  ```
+  git clone https://github.com/yzxing87/Seeing-and-Hearing.git
+  cd Seeing-and-Hearing/v2a
+  conda create -n seeing python=3.10
+  conda activate seeing
+  pip install -r pip_env3.txt
+
+  pip install git+https://github.com/yzxing87/transformers
+
+  pip install "git+https://github.com/facebookresearch/pytorchvideo.git"
+
+  pip install transformers_stream_generator
+  ```
+### V2A generation
+1. download necessary checkpoints 
+
+   (1) Download audioldm ckpts from [the huggingface repo](https://huggingface.co/cvssp/audioldm-m-full). Put the ckpts to `ckpt/`. 
+
+    ```
+    mkdir ckpt; cd ckpt
+    git clone https://huggingface.co/cvssp/audioldm-m-full
+    cd ..
+    ```
+
+    (2) Download imagebind ckpts `imagebind_huge.pth` from [the official repo](https://github.com/facebookresearch/ImageBind). Put the ckpts to `imagebind/.checkpoints/`. 
+
+
+    ```
+    mkdir imagebind/.checkpoints; cd imagebind/.checkpoints
+    wget https://dl.fbaipublicfiles.com/imagebind/imagebind_huge.pth
+    cd ../..
+    ```
+
+    (3) Download qwen ckpts from [the huggingface repo](https://huggingface.co/Qwen/Qwen-VL-Chat). Put the ckpts to `qwen_ckpt/`.
+    ```
+    mkdir qwen_ckpt; cd qwen_ckpt
+    git clone https://huggingface.co/Qwen/Qwen-VL-Chat
+    cd ..
+    ```
+2. follow `pipeline.sh`
 
 ## 🤗 Citation
 
@@ -42,3 +90,6 @@ Our code will come soon.
 ## 📭 Contact
 
 If you have any comments or questions, feel free to contact [Yazhou Xing](yxingag@connect.ust.hk), [Yingqing He](yhebm@connect.ust.hk) or [Zeyue Tian](ztianad@connect.ust.hk).
+
+## License
+Please follow [CC-BY-NC](./LICENSE).
